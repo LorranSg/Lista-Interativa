@@ -27,7 +27,7 @@ list_num(lista)
 print("-"*20)
 print("Obrigado por usar nosso sistema de lista!")
 
-with open("lista.txt", "w", encoding="utf-8") as arquivo:
+with open("lista.txt", "w", encoding="utf-8") as arquivo: # Salvando a lista em um arquivo de texto
     for i, item in enumerate(lista, start=1):
         arquivo.write(f"{i}. {item} []\n")
  
